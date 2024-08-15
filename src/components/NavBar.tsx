@@ -6,12 +6,23 @@ interface Props {
 
 const NavBar = ({ title }: Props) => {
   return (
-    <nav className="navbar navbar-expand-lg">
+    <nav className="navbar navbar-expand-lg navbar-dark bg-success">
       <div className="container">
         <Link className="navbar-brand" to="/">
           {title}
         </Link>
-        <div className="collapse navbar-collapse">Julia</div>
+        <ul className="navbar-nav">
+          <li className="nav-item">
+            <Link className="nav-link" to="/">
+              Add New Habit
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link className="nav-link" to="/view-weekly">
+              View Weekly
+            </Link>
+          </li>
+        </ul>
       </div>
     </nav>
   );
