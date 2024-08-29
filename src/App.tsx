@@ -7,10 +7,12 @@ const App = () => {
   return (
     <>
       <NavBar title="Habit Tracker"></NavBar>
-      <Routes>
-        <Route path="/" element={<AddHabit />}></Route>
-        <Route path="/view-weekly" element={<ViewWeekly />}></Route>
-      </Routes>
+      <div className="container mt-5">
+        <Routes>
+          <Route path="/" element={<AddHabit />}></Route>
+          <Route path="/view-weekly" element={<ViewWeekly />}></Route>
+        </Routes>
+      </div>
     </>
   );
 };
